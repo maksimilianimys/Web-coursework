@@ -1,0 +1,153 @@
+//html::-webkit-scrollbar{
+//  display: none;
+//}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $brown-color;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $red-color;
+}
+
+:focus-visible {
+  outline: 2.5px solid $brown-color;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-style: normal;
+  line-height: normal;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: $background-color;
+}
+
+ul,
+a,
+address {
+  list-style: none;
+  text-decoration: none;
+  font-style: normal;
+  color: inherit;
+}
+
+a,
+ul,
+body,
+h3,
+h2,
+p,
+li,
+svg {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  user-select: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.dollar {
+  color: $font-dark;
+
+  font-family: $Angel-font;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+
+  text-align: right;
+
+  @include desktop-fhd {
+    font-size: 1.25vw;
+  }
+
+  @include small-desktop {
+    font-size: 1.429vw;
+  }
+
+  @include laptop {
+    font-size: 1.429vw;
+  }
+
+  @include small-laptop {
+    font-size: 1.429vw;
+  }
+
+  @include tablet {
+    font-size: 1.429vw;
+  }
+}
+
+.container {
+  width: 1520px;
+  margin: 0 auto;
+
+  @include desktop-fhd {
+    width: calc(100% - 10.417vw - 10.417vw);
+    margin-left: 10.417vw;
+    margin-right: 10.417vw;
+  }
+
+  @include desktop {
+    max-width: 100%;
+  }
+
+  @include small-desktop {
+    width: calc(100% - 9.524vw);
+    margin-left: 4.762vw;
+    margin-right: 4.762vw;
+  }
+
+  @include laptop {
+    width: calc(100% - 9.524vw);
+    margin-left: 4.762vw;
+    margin-right: 4.762vw;
+  }
+
+  @include small-laptop {
+    width: calc(100% - 9.524vw);
+    margin-left: 4.762vw;
+    margin-right: 4.762vw;
+  }
+
+  @include tablet {
+    width: calc(100% - 9.524vw);
+    margin-left: 4.762vw;
+    margin-right: 4.762vw;
+  }
+
+  @include mobile {
+    @include mobile {
+      width: calc(100% - clamp(48px, 9.536%, 92px));
+      margin: 0 clamp(24px, 4.768%, 46px);
+    }
+  }
+}

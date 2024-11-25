@@ -1,0 +1,197 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.accordion {
+  color: $white;
+
+  padding: 0 259px;
+
+  @include small-desktop {
+    width: 1002px;
+
+    padding: 0;
+  }
+
+  @include laptop {
+    width: 1002px;
+
+    padding: 0;
+  }
+
+  @include small-laptop {
+    width: 78.281vw;
+
+    padding: 0;
+  }
+
+  @include tablet {
+    width: 78.281vw;
+
+    padding: 0;
+  }
+
+  @include mobile {
+    width: clamp(327px, 78.281vw, 1002px);
+
+    padding: 0;
+  }
+}
+
+h2 {
+  color: $background-white-color;
+
+  font-family: $Angel-font;
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+
+  text-align: center;
+
+  @include desktop-fhd {
+    font-size: 3.333vw;
+  }
+
+  @include mobile {
+    font-size: clamp(40px, 8.333vw, 64px);
+  }
+}
+
+.accordion .container-accordion {
+  position: relative;
+}
+
+.accordion .label {
+  position: relative;
+
+  color: $white;
+
+  font-family: $Satoshi-font;
+  font-size: 24px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  padding: 32px 24px;
+
+  @include desktop-fhd {
+    font-size: 1.25vw;
+
+    padding: 1.667vw 1.25vw;
+  }
+
+  @include mobile {
+    font-size: clamp(18px, 3.125vw, 24px);
+
+    padding: clamp(24px, 4.167vw, 32px) 0;
+  }
+
+  &:hover::before,
+  &:focus::before {
+  }
+}
+
+.accordion .first-label {
+  margin-top: 28px;
+
+  @include desktop-fhd {
+    margin-top: 1.458vw;
+  }
+
+  @include mobile {
+    margin-top: clamp(8px, 2.734vw, 28px);
+  }
+}
+
+.accordion .label::before {
+  position: absolute;
+  top: 47.5%;
+  right: 40px;
+
+  color: $white;
+  content: '+';
+  font-size: 32px;
+
+  transform: translateY(-50%);
+
+  @include desktop-fhd {
+    font-size: 1.667vw;
+  }
+
+  @include mobile {
+    font-size: clamp(24px, 4.167vw, 32px);
+
+    top: 45%;
+    right: 1vw;
+  }
+}
+
+.accordion .content {
+  position: relative;
+
+  max-height: 0;
+
+  color: $white;
+
+  font-family: $Satoshi-font;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+
+  text-align: justify;
+
+  overflow: hidden;
+
+  transition: max-height 0.5s ease;
+
+  @include desktop-fhd {
+    font-size: 1.042vw;
+  }
+}
+
+.accordion .content p {
+  padding: 0 24px 32px;
+
+  @include desktop-fhd {
+    padding: 0 1.25vw 1.667vw;
+  }
+
+  @include mobile {
+    padding: 0 0 32px;
+  }
+}
+
+.accordion .container-accordion::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  content: '';
+  display: block;
+
+  height: 2px;
+
+  background-color: $line;
+}
+
+.accordion .container-accordion.active .content {
+  height: auto;
+}
+
+.accordion .container-accordion.active .label::before {
+  content: '-';
+  font-size: 32px;
+
+  @include desktop-fhd {
+    font-size: 1.667vw;
+  }
+
+  @include mobile {
+    font-size: clamp(24px, 4.167vw, 32px);
+  }
+}

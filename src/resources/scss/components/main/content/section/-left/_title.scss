@@ -1,0 +1,38 @@
+&-title {
+  h1 {
+    font-family: $Angel-font;
+    font-size: 112px;
+    font-weight: 400;
+
+    letter-spacing: -0.02em;
+    line-height: 1;
+
+    margin: 0;
+
+    text-align: left;
+
+    @include desktop-fhd {
+      font-size: 5.833vw;
+    }
+
+    @include small-desktop {
+      font-size: 6.667vw;
+    }
+
+    @include laptop {
+      font-size: 6.667vw;
+    }
+
+    @include small-laptop {
+      font-size: clamp(80px, 6.667vw, 90px);
+    }
+
+    @include tablet {
+      font-size: 80px;
+    }
+
+    @include mobile {
+      font-size: 80px;
+    }
+  }
+}

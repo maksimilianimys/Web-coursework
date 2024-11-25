@@ -1,0 +1,190 @@
+.main {
+  background: url("../images/background-page.png");
+  //background-size: cover;
+  overflow: hidden;
+
+  .container {
+    display: flex;
+  }
+
+  &-content-section {
+
+    &-left {
+      margin-top: 294px;
+      max-width: 481px;
+      word-wrap: break-word;
+
+      @import "content/section/-left/title";
+
+      @import "content/section/-left/button";
+
+      @import "content/section/-left/schedule";
+
+      @include desktop-fhd {
+        max-width: 25.052vw;
+        margin-top: 15.313vw;
+      }
+
+      @include small-desktop {
+        max-width: 28.631vw;
+      }
+
+      @include laptop {
+        max-width: 28.631vw;
+      }
+
+      @include small-laptop {
+        margin-top: 22.969vw;
+        max-width: clamp(320px, 28.631vw, 370px);
+      }
+
+      @include tablet {
+        margin-top: clamp(200px, 22.969vw, 240px);
+        max-width: 320px;
+      }
+
+      @include mobile {
+        margin-top: clamp(136px, 28.646vw, 220px);
+        max-width: clamp(320px, 78.125vw, 600px);
+      }
+    }
+
+    @import "content/section/-right/section-right";
+
+    @import "content/section/-marquee/marquee";
+
+  }
+
+  &-content-section-tattoo-club {
+    margin-top: 160px;
+
+    @include desktop-fhd {
+      margin-top: 8.333vw;
+    }
+
+    @include small-desktop {
+      margin-top: clamp(140px, 9.524vw, 160px);
+    }
+
+    @include laptop {
+      margin-top: clamp(120px, 9.524vw, 140px);
+    }
+
+    @include small-laptop {
+      margin-top: clamp(100px, 9.524vw, 120px);
+    }
+
+    @include tablet {
+      margin-top: clamp(80px, 9.524vw, 100px);
+    }
+
+    @include mobile {
+      margin-top: 80px;
+    }
+
+    h2 {
+      position: relative;
+      z-index: 1;
+
+      color: $background-white-color;
+
+      font-size: 64px;
+      font-family: $Angel-font;
+      font-weight: 400;
+      letter-spacing: -2px;
+      line-height: 1;
+
+      @include desktop-fhd {
+        font-size: clamp(64px, 3.333vw, 125px);
+      }
+
+      @include small-desktop {
+        font-size: clamp(54px, 3.81vw, 64px);
+      }
+
+      @include laptop {
+        font-size: 64px;
+      }
+
+      @include small-laptop {
+        font-size: clamp(59px, 5vw, 64px);
+      }
+
+      @include tablet {
+        font-size: clamp(50px, 5.762vw, 64px);
+      }
+
+      @include mobile {
+        font-size: clamp(40px, 8.333vw, 64px);
+      }
+    }
+
+    @import "content/section-tattoo-club/tattoo-club";
+
+  }
+
+  &-content-section-reviews {
+    margin-top: 160px;
+
+    @include desktop-fhd {
+      margin-top: 8.333vw;
+    }
+
+    @include small-desktop {
+      margin-top: clamp(140px, 9.524vw, 160px);
+    }
+
+    @include laptop {
+      margin-top: clamp(120px, 9.524vw, 140px);
+    }
+
+    @include small-laptop {
+      margin-top: 120px;
+    }
+
+    @include tablet {
+      margin-top: clamp(100px, 9.524vw, 120px);
+    }
+
+    @include mobile {
+      margin-top: clamp(80px, 9.524vw, 100px);
+    }
+
+    @import "content/section-reviews/swiper";
+
+  }
+
+  &-content-section-accordion {
+    margin-top: 160px;
+    margin-bottom: 344px;
+
+    @include desktop-fhd {
+      margin-top: 8.333vw;
+      margin-bottom: 17.917vw;
+    }
+
+    @include small-desktop {
+      margin-top: clamp(140px, 9.524vw, 160px);
+    }
+
+    @include laptop {
+      margin-top: clamp(120px, 9.524vw, 140px);
+    }
+
+    @include small-laptop {
+      margin-top: 120px;
+    }
+
+    @include tablet {
+      margin-top: clamp(100px, 9.524vw, 120px);
+      margin-bottom: clamp(300px, 33.594vw, 344px);
+    }
+
+    @include mobile {
+      margin-top: clamp(80px, 9.524vw, 100px);
+      margin-bottom: 663px;
+    }
+
+    @import "content/section-accordion/accordion";
+  }
+}

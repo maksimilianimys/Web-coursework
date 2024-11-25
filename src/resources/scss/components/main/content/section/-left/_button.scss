@@ -1,0 +1,91 @@
+&-button {
+  margin-top: 64px;
+  height: 80px;
+
+  @include desktop-fhd {
+    margin-top: 3.333vw;
+    height: 4.167vw;
+  }
+
+  @include small-desktop {
+    margin-top: 3.81vw;
+  }
+
+  @include laptop {
+    margin-top: 3.81vw;
+  }
+
+  @include small-laptop {
+    margin-top: clamp(40px, 3.81vw, 64px);
+    height: clamp(72px, 6.25vw, 80px);
+  }
+
+  @include tablet {
+    margin-top: 40px;
+    height: 72px;
+  }
+
+  @include mobile {
+    margin-top: 40px;
+    height: 72px;
+  }
+
+  img {
+    @include desktop-fhd {
+      height: 4.167vw;
+    }
+
+    @include small-laptop {
+      height: clamp(72px, 6.25vw, 80px);
+    }
+
+    @include tablet {
+      height: 72px;
+    }
+
+    @include mobile {
+      width: clamp(280px, 47.135vw, 325px);
+      height: 72px;
+    }
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:focus {
+    }
+  }
+
+  span {
+    position: absolute;
+
+    color: $span-dark;
+
+    font-family: $Satoshi-font;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+
+    @include desktop-fhd {
+      font-size: 1.25vw;
+    }
+
+    @include small-laptop {
+      font-size: 1.875vw;
+    }
+
+    @include tablet {
+      font-size: clamp(18px, 1.875vw, 20px);
+    }
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+}

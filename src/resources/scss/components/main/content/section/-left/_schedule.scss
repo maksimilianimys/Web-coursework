@@ -1,0 +1,113 @@
+&-schedule {
+  display: flex;
+  align-items: center;
+
+  margin-top: 64px;
+
+  @include desktop-fhd {
+    margin-top: 3.333vw;
+  }
+
+  @include small-desktop {
+    margin-top: 3.81vw;
+  }
+
+  @include laptop {
+    margin-top: 3.81vw;
+  }
+
+  @include small-laptop {
+    margin-top: clamp(40px, 3.81vw, 64px);
+  }
+
+  @include tablet {
+    margin-top: 40px;
+  }
+
+  @include mobile {
+    margin-top: 40px;
+  }
+
+  img {
+    @include desktop-fhd {
+      width: 1.25vw;
+      height: 1.25vw;
+    }
+  }
+
+  &-time {
+    display: flex;
+
+    width: 52px;
+    height: 52px;
+
+    border-radius: 8px;
+    background: $background-time;
+
+    justify-content: center;
+    align-items: center;
+
+    @include desktop-fhd {
+      width: 2.708vw;
+      height: 2.708vw;
+
+      border-radius: 0.417vw;
+    }
+  }
+
+  &-info {
+    display: flex;
+
+    margin-left: 24px;
+
+    @include desktop-fhd {
+      margin-left: 1.25vw;
+    }
+
+    &-days {
+      color: $brown-color;
+
+      font-family: $Satoshi-font;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+
+      margin-right: 12px;
+
+      p:not(:last-child) {
+        margin-bottom: 12px;
+
+        @include desktop-fhd {
+          margin-bottom: 0.625vw;
+        }
+      }
+
+      @include desktop-fhd {
+        font-size: 0.938vw;
+
+        margin-right: 0.625vw;
+      }
+    }
+
+    &-hours {
+      color: $white;
+
+      font-family: $Satoshi-font;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+
+      @include desktop-fhd {
+        font-size: 0.938vw;
+      }
+
+      p:not(:last-child) {
+        margin-bottom: 12px;
+
+        @include desktop-fhd {
+          margin-bottom: 0.625vw;
+        }
+      }
+    }
+  }
+}

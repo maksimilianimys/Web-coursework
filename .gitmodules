@@ -1,0 +1,6 @@
+[submodule "docs"]
+	path = docs
+	url = https://github.com/maksimilianimys/kursova-host
+[submodule "start-window/docs"]
+	path = start-window/docs
+	url = https://github.com/maksimilianimys/start-window

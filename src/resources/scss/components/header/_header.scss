@@ -1,0 +1,246 @@
+.header {
+  position: absolute;
+  z-index: 5;
+
+  top: 50px;
+  left: 0;
+  right: 0;
+
+  @include desktop-fhd {
+    top: 2.604vw;
+  }
+
+  @include mobile {
+    top: clamp(24px, 6.51vw, 50px);
+  }
+
+  &-navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+
+    height: 104px;
+
+    border-radius: 32px;
+
+    background: $background-color-element;
+    backdrop-filter: blur(5px);
+
+    padding: 0 11.053%;
+    gap: 120px;
+
+    @include desktop-fhd {
+      height: 5.417vw;
+
+      border-radius: 1.667vw;
+
+      padding: 0 8.75vw;
+      gap: 6.25vw;
+    }
+
+    @include laptop {
+      padding: 0 11.667vw;
+      gap: 8.333vw;
+    }
+
+    @include small-laptop {
+      padding: 0 11.667vw;
+      gap: 8.333vw;
+    }
+
+    @include tablet {
+      padding: 0 11.667vw;
+      gap: 8.333vw;
+    }
+
+    @include mobile {
+      height: clamp(72px, 13.542vw, 104px);
+
+      border-radius: clamp(24px, 4.167vw, 32px);
+
+      padding: 0 clamp(24px, 6.117vw, 85px);
+
+      justify-content: space-between;
+    }
+
+    &-left {
+      display: flex;
+
+      gap: 52px;
+
+      color: $font-white;
+      font-family: $Satoshi-font;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.33;
+      letter-spacing: 0.08em;
+      text-align: left;
+
+      a {
+        transition: color 0.3s ease-in-out;
+      }
+
+      a:hover, a:focus {
+        color: $brown-color;
+      }
+
+      @include desktop-fhd {
+        gap: 2.708vw;
+
+        font-size: 0.938vw;
+      }
+
+      @include laptop {
+        gap: 3.611vw;
+
+        font-size: 1.25vw;
+      }
+
+      @include small-laptop {
+        gap: 3.611vw;
+
+        font-size: 1.25vw;
+      }
+
+      @include tablet {
+        gap: 3.611vw;
+
+        font-size: clamp(10px, 1.25vw, 15px);
+      }
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    &-center-button {
+      background-color: transparent;
+
+      border: none;
+      outline: none;
+      cursor: pointer;
+
+      padding: 0;
+      margin: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .svg-path-center-button {
+        transition: fill 0.3s ease-in-out;
+      }
+
+      &:hover .svg-path-center-button {
+        fill: $light-dark-brown-color;
+      }
+
+      @include desktop-fhd {
+        svg {
+          height: 3.646vw;
+          width: 3.646vw;
+        }
+      }
+
+      @include small-laptop {
+        svg {
+          height: 5.469vw;
+          width: 5.469vw;
+        }
+      }
+
+      @include tablet {
+        svg {
+          height: 5.469vw;
+          width: 5.469vw;
+        }
+      }
+
+      @include mobile {
+        svg {
+          height: clamp(40px, 5.469vw, 44px);
+          width: clamp(40px, 5.469vw, 44px);
+        }
+      }
+    }
+
+    &-mobile-open-button {
+      display: none;
+
+      @include mobile {
+        background-color: transparent;
+
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover, &:focus {
+          .svg-path {
+            fill: $brown-color;
+            transition: fill 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+
+    &-right {
+      display: flex;
+
+      gap: 52px;
+
+      color: $font-white;
+      font-family: $Satoshi-font;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.33;
+      letter-spacing: 0.08em;
+      text-align: left;
+
+      a {
+        transition: color 0.3s ease-in-out;
+      }
+
+      a:hover, a:focus {
+        color: $brown-color;
+      }
+
+      @include desktop-fhd {
+        gap: 2.708vw;
+
+        font-size: 0.938vw;
+      }
+
+      @include laptop {
+        gap: 3.611vw;
+
+        font-size: 1.25vw;
+      }
+
+      @include small-laptop {
+        gap: 3.611vw;
+
+        font-size: 1.25vw;
+      }
+
+      @include tablet {
+        gap: 3.611vw;
+
+        font-size: clamp(10px, 1.25vw, 15px);
+      }
+
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+
+  @import "burger";
+}

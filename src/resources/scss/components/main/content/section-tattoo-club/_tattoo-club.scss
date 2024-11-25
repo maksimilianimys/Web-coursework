@@ -1,0 +1,634 @@
+&-grid {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 324px 368px;
+
+  gap: 108px 32px;
+
+  grid-template-areas:
+    "main-content-section-tattoo-club-left main-content-section-tattoo-club-top main-content-section-tattoo-club-right"
+    "main-content-section-tattoo-club-left main-content-section-tattoo-club-bottom main-content-section-tattoo-club-right";
+
+  @include desktop-fhd {
+    grid-template-rows: 16.875vw 19.167vw;
+
+    gap: 5.625vw 1.667vw;
+  }
+
+  @include small-desktop {
+    grid-template-rows: 19.286vw 21.905vw;
+
+    gap: 6.429vw 1.905vw;
+  }
+}
+
+.main-content-section-tattoo-club-left {
+  grid-area: main-content-section-tattoo-club-left;
+}
+
+.main-content-section-tattoo-club-top {
+  grid-area: main-content-section-tattoo-club-top;
+}
+
+.main-content-section-tattoo-club-bottom {
+  grid-area: main-content-section-tattoo-club-bottom;
+}
+
+.main-content-section-tattoo-club-right {
+  grid-area: main-content-section-tattoo-club-right;
+}
+
+@include laptop {
+  &-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 50px 50px;
+    grid-template-areas:
+    "main-content-section-tattoo-club-left main-content-section-tattoo-club-bottom"
+    "main-content-section-tattoo-club-left main-content-section-tattoo-club-right"
+    "main-content-section-tattoo-club-top main-content-section-tattoo-club-right";
+
+    @include laptop {
+      gap: 3.472vw 3.472vw;
+    }
+  }
+
+  .main-content-section-tattoo-club-left {
+    grid-area: main-content-section-tattoo-club-left;
+  }
+
+  .main-content-section-tattoo-club-right {
+    grid-area: main-content-section-tattoo-club-right;
+  }
+
+  .main-content-section-tattoo-club-top {
+    grid-area: main-content-section-tattoo-club-top;
+  }
+
+  .main-content-section-tattoo-club-bottom {
+    grid-area: main-content-section-tattoo-club-bottom;
+  }
+}
+
+@include small-laptop {
+  &-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 50px 50px;
+    grid-template-areas:
+    "main-content-section-tattoo-club-left main-content-section-tattoo-club-bottom"
+    "main-content-section-tattoo-club-left main-content-section-tattoo-club-right"
+    "main-content-section-tattoo-club-top main-content-section-tattoo-club-right";
+
+    @include small-laptop {
+      gap: 3.472vw 3.472vw;
+    }
+  }
+  .main-content-section-tattoo-club-left {
+    grid-area: main-content-section-tattoo-club-left;
+  }
+
+  .main-content-section-tattoo-club-right {
+    grid-area: main-content-section-tattoo-club-right;
+  }
+
+  .main-content-section-tattoo-club-top {
+    grid-area: main-content-section-tattoo-club-top;
+  }
+
+  .main-content-section-tattoo-club-bottom {
+    grid-area: main-content-section-tattoo-club-bottom;
+  }
+}
+
+@include tablet {
+  &-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 50px 50px;
+    grid-template-areas:
+    "main-content-section-tattoo-club-left main-content-section-tattoo-club-bottom"
+    "main-content-section-tattoo-club-left main-content-section-tattoo-club-right"
+    "main-content-section-tattoo-club-top main-content-section-tattoo-club-right";
+
+    @include tablet {
+      gap: clamp(32px, 3.472vw, 50px);
+    }
+  }
+
+  .main-content-section-tattoo-club-left {
+    grid-area: main-content-section-tattoo-club-left;
+  }
+
+  .main-content-section-tattoo-club-right {
+    grid-area: main-content-section-tattoo-club-right;
+  }
+
+  .main-content-section-tattoo-club-top {
+    grid-area: main-content-section-tattoo-club-top;
+  }
+
+  .main-content-section-tattoo-club-bottom {
+    grid-area: main-content-section-tattoo-club-bottom;
+  }
+}
+
+@include mobile {
+  &-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 2fr 1fr;
+    gap: 32px;
+    grid-template-areas:
+    "main-content-section-tattoo-club-left"
+    "main-content-section-tattoo-club-top"
+    "main-content-section-tattoo-club-right"
+    "main-content-section-tattoo-club-bottom";
+
+    @include mobile {
+      grid-template-rows: clamp(553px, 105.339vw, 809px) clamp(353px, 52.604vw, 404px)  clamp(553px, 105.339vw, 809px) clamp(353px, 52.604vw, 404px);
+    }
+  }
+
+  .main-content-section-tattoo-club-left {
+    grid-area: main-content-section-tattoo-club-left;
+  }
+
+  .main-content-section-tattoo-club-top {
+    grid-area: main-content-section-tattoo-club-top;
+  }
+
+  .main-content-section-tattoo-club-right {
+    grid-area: main-content-section-tattoo-club-right;
+  }
+
+  .main-content-section-tattoo-club-bottom {
+    grid-area: main-content-section-tattoo-club-bottom;
+  }
+}
+
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+
+&-left {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 52px 52px 0;
+
+  border-radius: 32px;
+  background-color: $background-color-element-main;
+
+  @include desktop-fhd {
+    padding: 2.708vw 2.708vw 0;
+
+    border-radius: 1.667vw;
+  }
+
+  @include small-desktop {
+    padding: 0;
+
+    h2 {
+      padding: 3.095vw 3.095vw 0;
+    }
+  }
+
+  @include laptop {
+    h2 {
+      padding-bottom: 52px;
+    }
+  }
+
+  @include small-laptop {
+    h2 {
+      padding-bottom: clamp(40px, 4.063vw, 52px);
+    }
+  }
+
+  @include tablet {
+    padding: 5.078vw 5.078vw 0;
+  }
+
+  @include mobile {
+    padding: clamp(32px, 6.771vw, 52px) clamp(32px, 6.771vw, 52px) 0;
+  }
+
+  &-image {
+    position: relative;
+    z-index: 1;
+
+    object-fit: contain;
+    object-position: bottom;
+
+    @include desktop-fhd {
+      height: 100%;
+      width: calc(100% - 40px);
+    }
+
+    @include small-desktop {
+      min-height: 420px;
+      width: auto;
+    }
+
+    @include laptop {
+      width: calc(100% - 40px);
+    }
+
+    @include small-laptop {
+      width: calc(100% - 40px);
+    }
+
+    @include tablet {
+      width: 33.398vw;
+      height: 45.41vw;
+    }
+
+    @include mobile {
+      width: clamp(243px, 33.398vw, 260px);
+      height: clamp(330px, 45.41vw, 360px);
+    }
+  }
+
+  &-decor {
+    position: absolute;
+
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+
+    background-image: url("../images/tattoo-club/dots.png");
+    background-size: cover;
+
+    &::after {
+      position: absolute;
+      top: -50px;
+
+      content: '';
+
+      width: 100%;
+      height: 45%;
+
+      background-image: linear-gradient(180.00deg, rgb(30, 28, 23), rgba(30, 28, 23, 0) 100%);
+    }
+  }
+}
+
+&-top {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 32px;
+  background-color: $background-white-color;
+
+  @include desktop-fhd {
+    border-radius: 1.667vw;
+    img {
+      width: auto;
+      height: 12.448vw;
+    }
+  }
+
+  p {
+    .dollar {
+      font-size: 24px;
+
+      @include desktop-fhd {
+        font-size: 1.25vw;
+      }
+    }
+
+    position: absolute;
+    right: 40px;
+    bottom: 37px;
+
+    color: $font-dark;
+
+    font-family: $Angel-font;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+
+    @include desktop-fhd {
+      font-size: 1.667vw;
+    }
+
+    @include small-desktop {
+      right: 1vw;
+    }
+
+    @include tablet {
+      right: 1.106vw;
+    }
+
+    @include mobile {
+      right: 21px;
+      bottom: 21px;
+    }
+  }
+}
+
+&-center {
+  position: absolute;
+  z-index: 1;
+
+  top: 309px;
+  left: 484.5px;
+
+  fill: $background-color-element-main;
+
+  @include desktop-fhd {
+    top: 16.094vw;
+    left: 25.154vw;
+    svg {
+      width: 28.646vw;
+      height: auto;
+    }
+  }
+
+  @include small-desktop {
+    top: 18.393vw;
+    left: 28.739vw;
+
+    svg {
+      width: 32.738vw;
+      height: auto;
+    }
+  }
+
+  @include laptop {
+    display: none;
+  }
+
+  @include small-laptop {
+    display: none;
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+&-bottom {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 32px;
+  background: $background-white-color;
+
+  @include desktop-fhd {
+    border-radius: 1.667vw;
+    img {
+      width: auto;
+      height: 15.938vw;
+    }
+  }
+
+  p {
+    .dollar {
+      font-size: 24px;
+
+      @include desktop-fhd {
+        font-size: 1.25vw;
+      }
+    }
+
+    position: absolute;
+    right: 40px;
+    bottom: 37px;
+
+    color: $font-dark;
+
+    font-family: $Angel-font;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+
+    @include desktop-fhd {
+      font-size: 1.667vw;
+    }
+
+    @include small-desktop {
+      right: 2.381vw;
+    }
+
+    @include tablet {
+      right: 3.906vw;
+    }
+
+    @include mobile {
+      bottom: 21px;
+      right: 21px;
+    }
+  }
+}
+
+&-right {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 32px;
+  background-color: $background-color-element-main;
+
+  @include desktop-fhd {
+    border-radius: 1.667vw;
+  }
+
+  &-image {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+      object-position: bottom;
+    }
+
+    &::after {
+      position: absolute;
+
+      top: 179px;
+
+      content: '';
+
+      width: 100%;
+      height: 45%;
+
+      background: linear-gradient(180.00deg, rgb(30, 28, 23) 9.214%, rgba(30, 28, 23, 0) 100%);
+      transform: rotate(-180.00deg);
+
+      @include desktop-fhd {
+        top: 9.323vw;
+      }
+
+      @include laptop {
+        top: 15.972vw;
+        left: 0.33px
+      }
+
+      @include small-laptop {
+        top: 16.1vw;
+        left: 0.33px
+      }
+
+      @include tablet {
+        top: 16.1vw;
+        left: 0.33px
+      }
+
+      @include mobile {
+        top: 33.333vw;
+      }
+    }
+  }
+
+  &-elements {
+    padding: 52px 52px 66px;
+
+    @include desktop-fhd {
+      padding: 2.708vw 2.708vw 3.438vw;
+    }
+
+    @include small-desktop {
+      padding: clamp(40px, 3.095vw, 52px) 52px 0;
+    }
+
+    @include tablet {
+      padding: 52px clamp(39px, 5.078vw, 52px) clamp(52px, 6.445vw, 66px);
+    }
+
+    @include mobile {
+      padding: clamp(32px, 6.771vw, 52px);
+
+      @media (min-width: 650px) and (max-width: 767px) {
+        padding: 28px clamp(32px, 6.771vw, 52px);;
+      }
+
+      @media (min-width: 580px) and (max-width: 649.9px) {
+        padding: clamp(12px, 2.5vw, 28px) clamp(32px, 6.771vw, 52px);;
+      }
+
+      @media (min-width: 468px) and (max-width: 579.9px) {
+        padding: 0px clamp(32px, 6.771vw, 52px);;
+      }
+    }
+
+    h2 {
+      @include mobile {
+        letter-spacing: -0.02em;
+      }
+    }
+
+    p {
+      position: relative;
+      padding-top: 24px;
+
+      color: $font-p-description-text;
+
+      font-family: $Satoshi-font;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: -0.01em;
+
+      @include desktop-fhd {
+        padding-top: 1.25vw;
+
+        font-size: 0.938vw;
+      }
+
+      @include small-desktop {
+        padding-top: clamp(20px, 1.429vw, 24px);
+      }
+
+      @include mobile {
+        padding-top: clamp(16px, 3.125vw, 24px);
+
+        font-size: clamp(14px, 2.344vw, 18px);
+      }
+    }
+
+    button {
+      position: relative;
+
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+
+      border: none;
+      outline: none;
+      cursor: pointer;
+
+      margin-top: 24px;
+      padding: 20px 32px;
+
+      width: 255px;
+      height: 64px;
+
+      border-radius: 12px;
+      background: $brown-color;
+
+      color: $font-brown;
+      font-family: $Satoshi-font;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+
+      transition: 0.3s ease-in-out;
+
+      &:hover, &:focus {
+        background: $light-dark-brown-color;
+      }
+
+      @include desktop-fhd {
+        margin-top: 1.25vw;
+        padding: 1.042vw 1.667vw;
+
+        width: 13.281vw;
+        height: 3.333vw;
+
+        border-radius: 0.625vw;
+
+        font-size: 0.938vw
+      }
+
+      @include small-desktop {
+        margin-top: clamp(20px, 1.429vw, 24px);
+
+        height: clamp(60px, 3.81vw, 64px);
+      }
+
+      @include mobile {
+        margin-top: 24px;
+
+        width: clamp(206px, 33.203vw, 255px);
+        height: clamp(59px, 8.333vw, 64px);
+
+        font-size: clamp(14px, 2.344vw, 18px);
+
+        letter-spacing: 0.06em;
+      }
+    }
+  }
+}
